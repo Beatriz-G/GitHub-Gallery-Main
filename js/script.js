@@ -2,6 +2,9 @@
 const overview = document.querySelector(".overview");
 //Github user name
 const username = "Beatriz-G";
+//variable selecting the unordered list to display the repos list
+const repoList = document.querySelector(".repo-list");
+
 
 //async function to fetch information from GH profile
 const fetchInfo = async function () {
@@ -29,4 +32,22 @@ const displayUserInfo = function (data) {
     </div>
     `;
     overview.append(div);
+    ghRepos();
 };
+
+const ghRepos = async function () {
+    const fetchRepoList =await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
+    const fetchData = await fetchRepoList.json();
+
+    displayInfo(fetchData);
+};
+
+const displayInfo = function (repos) {
+    for (const repo of repos) {
+        const repoItem = document.createElement("li");
+        repoItem.classList.add("repo");
+        repoItem.innerHTML = `<h3>${repo.name}</h3>`;
+        repoList.append(repoItem);
+    }
+}; 
+
