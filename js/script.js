@@ -75,7 +75,7 @@ const specificInfo = async function (repoName) {
 
     const languages = [];
     for (const language in languageData) {
-        languages.push(languages);
+        languages.push(language);
     }
 
     displayRepo(repoInfo, languages);
