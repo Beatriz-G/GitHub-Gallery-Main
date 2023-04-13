@@ -16,7 +16,6 @@ const filterInput = document.querySelector(".filter-repos");
 //async function to fetch information from GH profile
 const userInfo = async function () {
     const user = await fetch(`https://api.github.com/users/${username}`);
-
     const data = await  user.json();
     displayUserInfo(data);
 };
@@ -39,10 +38,10 @@ const displayUserInfo = function (data) {
     </div>
     `;
     overview.append(div);
-    ghRepos();
+    ghRepos(username);
 };
 
-const ghRepos = async function () {
+const ghRepos = async function (username) {
     const fetchRepoList =await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
     const repoData = await fetchRepoList.json();
 
@@ -84,7 +83,6 @@ const specificInfo = async function (repoName) {
     }
 
     displayRepo(repoInfo, languages);
-
 };
 
 //display repo languages
