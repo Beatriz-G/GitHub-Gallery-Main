@@ -63,7 +63,7 @@ h1 {
 .circle {
     width: 20px;
     height: 20px;
-    background-color: #483978;
+    background-color: #ae9ee4;
     border-radius: 100%;
     z-index: 99;
     align-self: center;
@@ -79,7 +79,7 @@ h1 {
 h3 {
     width: 100%;
     text-align: center;
-    color: #f86d58;
+    color: #451339;
 }
 
 ul {
@@ -106,8 +106,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #483978;
-    color: white;
+    background-color: #f2d2f1;
+    color: rgb(84, 46, 86);
     font-size: 18px;
     padding-bottom: 2em;
 }
@@ -172,7 +172,7 @@ section.repo-data {
 .repo-list li {
     width: 90%;
     margin: 1em 0;
-    border: 1px solid #f86d58;
+    border: 1px solid #e590cf;
     padding: 0.5em;
 }
 
@@ -183,7 +183,7 @@ section.repo-data {
 }
 
 .repo-list h3:hover {
-    background-color: #eee9ff;
+    background-color: #ff39fa;
     cursor: pointer;
 }
 
