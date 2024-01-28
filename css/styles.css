@@ -119,6 +119,7 @@ ul {
 
 .user-info img {
     border-radius: 100%;
+    box-shadow: 0 0 10px 4px grey;
 }
 
 .user-info div {
