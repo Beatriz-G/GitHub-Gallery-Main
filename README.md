@@ -8,7 +8,7 @@
 
  <h3>How to Use the GitHub Gallery</h3>
  <p>The best way to use the Gallery is to scroll through the page and look at the names of the repos. Once you find a repo that interests you, click on the name, it will 
-	 open up in a new page and you can read the Name, Description, Default Branch and Langauges used.</p> 
+	 open up in a new page and you can read the Name, Description, Default Branch and Languages used.</p> 
 	
  <p>Once you click on a repo, you will see two buttons, "View Repo on GitHub" (purple button with white letters) and "Back to Repo Gallery" (white button with black letters). 
 	 The "View Repo on GitHub" button allows you to view the repo on the GitHub website. Once there, you can scroll through the code and other features. The "Back to Repo 
